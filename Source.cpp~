@@ -284,7 +284,7 @@ int main()
 	int num_mine; //кол-во мин на игровом поле
 	bool error_selecting_mode; //проверка на то, правильно ли был выбран режим
 	while(1){
-	cout << "Выберите режим игры:\n<1> Новичок\n<2> Любитель\n<3> Профессионал\n<4> Выход" << endl;
+	cout << "Выберите режим игры:\n<1> Новичок\n<2> Любитель\n<3> Профессионал" << endl;
 	cin >> selecting_mode;
 	//выбор режима игры
 	switch (selecting_mode) {
@@ -303,7 +303,7 @@ int main()
 		num_mine = mine_professional; //задаём кол-во мин
 		error_selecting_mode = false;
 		break;
-	case 4:	
+	case 4: 
 		return 0;
 	default:
 		error_selecting_mode = true;
